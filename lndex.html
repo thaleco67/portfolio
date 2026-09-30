@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="home">
+
+        <header id="cabecalho">
+            <ul id="tag">
+                <li id="btncontainer"><button id="darkMode"><img id="tagimg" src="Thales.png" alt=""></button></li>
+            </ul>
+            <ul id="principal">
+                <li><a href="">Início</a>
+                    <hr class="hr">
+                </li>
+                <li><a href="#sobreMim">Sobre mim</a>
+                    <hr class="hr">
+                </li>
+                <li><a href="#portfolio">Portfólio</a>
+                    <hr class="hr">
+                </li>
+                <li><a href="#contato">Contato</a>
+                    <hr class="hr">
+                </li>
+            </ul>
+        </header>
+        <section id="container-apresentacao">
+            <div id="Apresentação">
+                <div id="memoryCard">
+                    <img src="Thales1.png" alt="">
+                </div>
+                <div id="textoApresentação">
+                    <span id="parte1">Olá eu sou</span>
+                    <span id="parte2">Thales</span>
+                    <span id="parte3" class="letra3">Desenvolvedor</span>
+                    <span id="parte4">Apaixonado por tecnologia e por tranformar ideias em soluções. Busco sempre
+                        melhorar
+                        minhas habilidades
+                        técnicas</span>
+                    <button id="Projetos"><a href="#sobreMim"><span>Sobre Mim</span></a></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sobreMim" class="sobre-mim">
+            <div class="editor-window">
+
+                <div class="editor-titlebar">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="filename">sobre-mim.js</span>
+                </div>
+
+                <div class="editor-body">
+                    <p><span class="comment">// quem eu sou</span></p>
+                    <p><span class="keyword">const</span> <span class="var">thales</span> = {</p>
+                    <p class="indent"><span class="prop">papel</span>: <span class="string">"Designer UI/UX"</span>,</p>
+                    <p class="indent"><span class="prop">ferramentas</span>: [<span class="string">"Figma"</span>, <span
+                            class="string">"Photoshop"</span>, <span class="string">"Illustrator"</span>, <span
+                            class="string">"Canva"</span>],</p>
+                    <p class="indent"><span class="prop">missao</span>: <span class="string">"transformar problemas
+                            confusos em telas simples"</span>,</p>
+                    <p class="indent"><span class="prop">disponivel_para_projetos</span>: <span
+                            class="keyword">true</span>,</p>
+                    <p>};</p>
+                    <p class="spaced"><span class="comment">// bora conversar?</span></p>
+                    <p><span class="var">thales</span>.<span class="keyword">contato</span>()<span id="cursor">_</span>
+                    </p>
+                </div>
+
+                <div class="editor-footer">
+                    <button class="run-btn"
+                        onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})" id="">
+                        $ executar contato()
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="portfolio-pastas">
+            <div class="board">
+
+                <div>
+                    <img class="avatar" src="Thales.png" alt="">
+                </div>
+
+                <p class="eyebrow">PORTFÓLIO</p>
+                <h1 class="titulo">Explore meus projetos e certificados</h1>
+
+                <div class="tabs">
+                    <button class="tab active" data-folder="projetos">
+                        Projetos
+                    </button>
+                    <button class="tab" data-folder="certificados">
+                        Certificados
+                    </button>
+                    <button class="tab" data-folder="techstack">
+                        Tech stack
+                    </button>
+                </div>
+
+                <div class="folder-content" id="folder-content">
+                    <!-- preenchido via JS -->
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <section id="skills" class="painel">
+        <h2 class="letra3">Com o que trabalho</h2>
+        <div class="faixa-skills">
+            <div class="marquee">
+                <span class="on">Figma</span><span>Pesquisa com usuário</span><span
+                    class="on">Prototipação</span><span>Design System</span><span class="on">HTML / CSS /
+                    JS</span><span>Wireframing</span>
+                <span class="on">Figma</span><span>Pesquisa com usuário</span><span
+                    class="on">Prototipação</span><span>Design System</span><span class="on">HTML / CSS /
+                    JS</span><span>Wireframing</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="spine">
+        <div id="spine-fill">
+            <div id="spine-dot"></div>
+        </div>
+    </div>
+    <section id="contato" class="contato">
+        <div class="contato-window">
+
+            <div class="editor-titlebar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="filename">contato.js</span>
+            </div>
+
+            <div class="contato-body">
+
+                <div class="contato-info">
+                    <p class="eyebrow">CONTATO</p>
+                    <h2 class="titulo">Bora conversar sobre o seu projeto?</h2>
+                    <p class="contato-texto">
+                        Tem uma ideia, vaga ou projeto? Me chama por aqui ou pelas redes.
+                    </p>
+
+                    <ul class="contato-links">
+                        <li>
+                            <a href="mailto:seuemail@gmail.com">
+                                <span class="prop">email</span>
+                                <span class="string">seuemail@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener">
+                                <span class="prop">linkedin</span>
+                                <span class="string">/in/seu-usuario</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">
+                                <span class="prop">github</span>
+                                <span class="string">/seu-usuario</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5531999999999" target="_blank" rel="noopener">
+                                <span class="prop">whatsapp</span>
+                                <span class="string">(31) 99999-9999</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form id="contato-form" class="contato-form">
+                    <label for="nome"><span class="comment">// nome</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                    <label for="email"><span class="comment">// email</span></label>
+                    <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+
+                    <label for="mensagem"><span class="comment">// mensagem</span></label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."
+                        required></textarea>
+
+                    <button type="submit" class="run-btn">$ enviar_mensagem()</button>
+                    <p id="form-status" role="status"></p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>© 2026 Thales</span>
+        <span>Design & Desenvolvimento</span>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
